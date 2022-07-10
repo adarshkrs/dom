@@ -12,28 +12,31 @@
 	<button onclick="setLastName()">LASTNAME</button>
 	<button onclick="setFullName()">FIRSTNAME NAME</button>
 	<button onclick="resetDefaults()">RESET DEFAULTS</button>
-	<script type="text/javascript">
-		function setFirstName() {
-			// Change the content of h1 to your first name
-            document.getElementById("firstName").innerText="adarsh";
-		}
-
-		function setLastName() {
-			// Change the content of div to your last name
-            document.getElementById("lastName").innerText="raj"
-
-		}
-
-		function setFullName() {
-			// Change the content of p to your full name (firstname - lastname)
-            document.getElementById("fullName").innerText="Adarsh Kumar"
-
-		}
-
-		function resetDefaults(){
-			// reset the firstname, lastname, and fullname to empty values
-            document.getElementById("firstName").innerText="";
-		}
-	</script>
+	
 </body>
 </html>
+<script type="text/javascript">
+	function setFirstName() {
+		// Change the content of h1 to your first name
+		document.getElementById("firstname").innerText="adarsh";
+	}
+
+	function setLastName() {
+		// Change the content of div to your last name
+		document.getElementById("lastname").innerText="Kumar"
+
+	}
+
+	function setFullName() {
+		// Change the content of p to your full name (firstname - lastname)
+		document.getElementById("fullname").textContent="Adarsh Kumar"
+
+	}
+
+	function resetDefaults(){
+		// reset the firstname, lastname, and fullname to empty values
+		document.getElementById("firstname").innerText="";
+		document.getElementById("lastname").innerText="";
+		document.getElementById("fullname").innerText="";
+	}
+</script>
